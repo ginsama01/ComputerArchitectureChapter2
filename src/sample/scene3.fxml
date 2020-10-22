@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller3">
+   <children>
+      <HBox prefHeight="50.0" prefWidth="650.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="A" wrappingWidth="58.6103515625">
+               <HBox.margin>
+                  <Insets left="70.0" top="12.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="textA" prefHeight="41.0" prefWidth="414.0" promptText="vd: 1.0101 x 2^4">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" top="5.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets bottom="30.0" top="50.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="650.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="B" wrappingWidth="55.318359375">
+               <HBox.margin>
+                  <Insets left="70.0" top="12.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="textB" prefHeight="41.0" prefWidth="414.0" promptText="vd: 101.1011 x 2^(-13)">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" top="5.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets bottom="30.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="49.0" prefWidth="650.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onAdd" text="Cộng">
+               <HBox.margin>
+                  <Insets left="150.0" right="50.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onSub" text="Trừ">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onMul" text="Nhân">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onDivide" text="Chia">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="30.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="650.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kết quả" wrappingWidth="69.8291015625">
+               <HBox.margin>
+                  <Insets left="70.0" top="12.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="textResult" prefHeight="41.0" prefWidth="414.0">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" top="5.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+   </children>
+</VBox>

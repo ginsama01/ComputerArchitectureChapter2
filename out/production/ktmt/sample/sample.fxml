@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="650.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="Số nguyên">
+      <content>
+        <fx:include source="scene1.fxml" />
+      </content>
+    </Tab>
+    <Tab text="Số thực">
+      <content>
+        <fx:include source="scene2.fxml" />
+      </content>
+    </Tab>
+      <Tab text="Phép toán số thực">
+        <content>
+          <fx:include source="scene3.fxml" />
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
