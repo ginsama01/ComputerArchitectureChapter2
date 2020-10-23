@@ -84,7 +84,7 @@
                   <Insets left="70.0" top="12.0" />
                </HBox.margin>
             </Text>
-            <TextField fx:id="textInput" onAction="#onActionExpression" prefHeight="41.0" prefWidth="414.0">
+            <TextField fx:id="textInput" onAction="#onActionExpression" prefHeight="41.0" prefWidth="414.0" promptText="vd: 11.01 x 2^3 * 1011.10 x 2^32">
                <font>
                   <Font name="Times New Roman" size="22.0" />
                </font>
