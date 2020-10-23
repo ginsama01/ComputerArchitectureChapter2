@@ -161,6 +161,9 @@ public class DoubleType {
         while (res.charAt(res.length() - 1) == '0') {
             res = res.substring(0, res.length() - 1);
         }
+        if (res.charAt(res.length() - 1) == '.') {
+            res = res.substring(0, res.length() - 1);
+        }
         res = res + " x 2^(" + dem + ")";
         if (ten.charAt(0) == '-') {
             return FormatDouble.formatReverse("-" + res);
@@ -176,8 +179,14 @@ public class DoubleType {
         if (dpd.charAt(0) == '-') {
             result = result + "1";
             so = 3;
+            if (dpd.charAt(2) != '.') {
+                so = 2;
+            }
         } else {
             result = result + "0";
+            if (dpd.charAt(1) != '.') {
+                so = 1;
+            }
         }
         int dau = 0;
         for (int i = dpd.length() - 1; i >= 0; --i) {
@@ -233,8 +242,14 @@ public class DoubleType {
         if (dpd.charAt(0) == '-') {
             result = result + "1";
             so = 3;
+            if (dpd.charAt(2) != '.') {
+                so = 2;
+            }
         } else {
             result = result + "0";
+            if (dpd.charAt(1) != '.') {
+                so = 1;
+            }
         }
         int dau = 0;
         for (int i = dpd.length() - 1; i >= 0; --i) {
@@ -308,6 +323,49 @@ public class DoubleType {
                 so += (tinh.charAt(i) - '0') * mu;
             }
             return String.valueOf(so);
+        }
+    }
+
+    public static String bitdauToTen(String bitdau, String bitNguyen, String bitThuc) {
+        for (int i = 0; i < bitdau.length(); ++i) {
+            if (bitdau.charAt(i) == '.') {
+                bitdau = bitdau.substring(0, i) + bitdau.substring(i+1, bitdau.length());
+                bitNguyen = String.valueOf(i);
+                bitThuc = String.valueOf(bitdau.length() - i);
+                break;
+            }
+        }
+        int sign = 0;
+        String result = bitdau;
+        if (bitdau.charAt(0) == '1') {
+            sign = 1;
+            int nho = 0;
+            if (bitdau.charAt(bitdau.length() - 1) == '0') {
+                nho = 1;
+                result = "1";
+            } else {
+                result = "0";
+            }
+            for (int i = bitdau.length() - 2; i >= 0; --i) {
+                int num = bitdau.charAt(i) - nho - '0';
+                if (num < 0) {
+                    result = "1" + result;
+                    nho = 1;
+                } else {
+                    nho = 0;
+                    result = num + result;
+                }
+            }
+            result = result.replace('0', '2');
+            result = result.replace('1', '0');
+            result = result.replace('2', '1');
+        }
+        result = result.substring(0, Integer.parseInt(bitNguyen)) + "."
+                + result.substring(Integer.parseInt(bitNguyen), result.length());
+        if (sign == 1) {
+            return "-" + tinhToTen(result);
+        } else {
+            return tinhToTen(result);
         }
     }
 }

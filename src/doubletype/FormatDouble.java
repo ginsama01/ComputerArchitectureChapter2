@@ -15,6 +15,9 @@ public class FormatDouble {
     }
 
     public static String formatTo(String a) {
+        while (a.charAt(0) == ' ') {
+            a = a.substring(1);
+        }
         while (a.charAt(a.length() - 1) == ' ') {
             a = a.substring(0, a.length() - 1);
         }

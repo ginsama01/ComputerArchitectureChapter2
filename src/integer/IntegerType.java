@@ -193,25 +193,31 @@ public class IntegerType {
         if (cb2.isEmpty()) {
             return "";
         }
-        String result = "";
-        int nho = 0;
-        if (cb2.charAt(cb2.length() - 1) == '0') {
-            nho = 1;
-            result = "1";
-        } else {
-            result = "0";
-        }
-        for (int i = cb2.length() - 2; i >= 0; --i) {
-            int num = cb2.charAt(i) - nho - '0';
-            if (num < 0) {
-                result = "1" + result;
+        String result = cb2;
+        if (cb2.charAt(0) == '1') {
+            int nho = 0;
+            if (cb2.charAt(cb2.length() - 1) == '0') {
                 nho = 1;
+                result = "1";
             } else {
-                nho = 0;
-                result = num + result;
+                result = "0";
             }
+            for (int i = cb2.length() - 2; i >= 0; --i) {
+                int num = cb2.charAt(i) - nho - '0';
+                if (num < 0) {
+                    result = "1" + result;
+                    nho = 1;
+                } else {
+                    nho = 0;
+                    result = num + result;
+                }
+            }
+            result = result.replace('0', '2');
+            result = result.replace('1', '0');
+            result = result.replace('2', '1');
+            return "-" + twoToTen(result);
         }
-        return chuanBu1ToTen(result);
+        return twoToTen(result);
     }
 
     public static String twoToThapLucPhan(String two) {

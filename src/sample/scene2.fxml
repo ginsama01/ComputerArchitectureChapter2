@@ -57,7 +57,7 @@
                   <Insets left="70.0" top="12.0" />
                </HBox.margin>
             </Text>
-            <TextField fx:id="text3" prefHeight="39.0" prefWidth="351.0" promptText="vd 10010010">
+            <TextField fx:id="text3" onAction="#onActionBitdau" prefHeight="39.0" prefWidth="351.0" promptText="vd 10010010">
                <font>
                   <Font name="Times New Roman" size="22.0" />
                </font>
@@ -113,7 +113,7 @@
                   <Insets left="70.0" top="12.0" />
                </HBox.margin>
             </Text>
-            <TextArea fx:id="text5" onKeyPressed="#onAcTionDoCxacDon" prefHeight="125.0" prefWidth="356.0">
+            <TextArea fx:id="text5" onKeyPressed="#onAcTionDoCxacDon" prefHeight="125.0" prefWidth="356.0" promptText="vd: 01000111101101110000000000000000 or 0100 0111 1011 0111 0000 0000 0000 0000">
                <font>
                   <Font name="Times New Roman" size="20.0" />
                </font>

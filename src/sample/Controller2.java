@@ -34,6 +34,13 @@ public class Controller2 {
         text6.setText(DoubleType.dauPhayDongToDoCxacKep(text4.getText()));
     }
 
+    public void onActionBitdau(ActionEvent event) {
+        text1.setText(DoubleType.bitdauToTen(text3.getText(), bitNguyen.getText(), bitThuc.getText()));
+        text2.clear();
+        text4.clear();
+        text5.clear();
+        text6.clear();
+    }
     public void onActionDauPhayDong(ActionEvent event) {
         text5.setText(DoubleType.dauPhayDongToDoCxacDon(text4.getText()));
         text6.setText(DoubleType.dauPhayDongToDoCxacKep(text4.getText()));
