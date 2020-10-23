@@ -1,5 +1,3 @@
-# App chuyển đổi cơ số và tính toán phục vụ cho chương 2 Kiến trúc máy tính
-
 ## Đôi lời của tác giả
 * Code được viết ra để phục vụ việc ôn tập + thi KTMT chương 2
 * Source code sử dụng jdk 1.8, viết bằng IntelliJ IDEA
