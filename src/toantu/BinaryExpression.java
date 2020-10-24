@@ -32,18 +32,18 @@ public class BinaryExpression {
                 muB = Integer.parseInt(b.substring(i+1, b.length() - 1));
             }
         }
-        double gtA = Double.parseDouble(giatriA);
-        double gtB = Double.parseDouble(giatriB);
+        double gtA = Double.parseDouble(DoubleType.tinhToTen(giatriA));
+        double gtB = Double.parseDouble(DoubleType.tinhToTen(giatriB));
         while (muA < muB) {
-            gtA /= 10;
+            gtA /= 2;
             muA++;
         }
         while (muB < muA) {
-            gtB /= 10;
+            gtB /= 2;
             muB++;
         }
-        giatriA = String.valueOf(gtA);
-        giatriB = String.valueOf(gtB);
+        giatriA = DoubleType.tenToTinh(String.valueOf(gtA));
+        giatriB = DoubleType.tenToTinh(String.valueOf(gtB));
         gtA = Double.parseDouble(DoubleType.tinhToTen(giatriA));
         gtB = Double.parseDouble(DoubleType.tinhToTen(giatriB));
         if (a.charAt(0) == '-') gtA *= (-1);
@@ -90,18 +90,18 @@ public class BinaryExpression {
                 muB = Integer.parseInt(b.substring(i+1, b.length() - 1));
             }
         }
-        double gtA = Double.parseDouble(giatriA);
-        double gtB = Double.parseDouble(giatriB);
+        double gtA = Double.parseDouble(DoubleType.tinhToTen(giatriA));
+        double gtB = Double.parseDouble(DoubleType.tinhToTen(giatriB));
         while (muA < muB) {
-            gtA /= 10;
+            gtA /= 2;
             muA++;
         }
         while (muB < muA) {
-            gtB /= 10;
+            gtB /= 2;
             muB++;
         }
-        giatriA = String.valueOf(gtA);
-        giatriB = String.valueOf(gtB);
+        giatriA = DoubleType.tenToTinh(String.valueOf(gtA));
+        giatriB = DoubleType.tenToTinh(String.valueOf(gtB));
         gtA = Double.parseDouble(DoubleType.tinhToTen(giatriA));
         gtB = Double.parseDouble(DoubleType.tinhToTen(giatriB));
         if (a.charAt(0) == '-') gtA *= (-1);

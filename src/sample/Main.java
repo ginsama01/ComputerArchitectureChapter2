@@ -22,7 +22,7 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
-        String s = BinaryExpression.add("-11.0101 x 2^13", "11.1011 x 2^15");
+        String s = BinaryExpression.add("1.110 x 2^(-2)", "-1.000x2^(-1)");
         System.out.println(s);
     }
 }

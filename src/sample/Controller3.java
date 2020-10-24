@@ -29,9 +29,16 @@ public class Controller3 {
     public void onActionExpression(ActionEvent event) {
         String text = textInput.getText();
         String numA = "", numB = "";
+        int ok = 0;
         for (int i = 0; i < text.length(); ++i)
         {
             char t = text.charAt(i);
+            if (t == 'x') {
+                ok = 1;
+            }
+            if (i >= 1 && text.charAt(i-1) == '(') continue;
+            if (i >= 1 && text.charAt(i-1) == '^') continue;
+            if (ok == 0) continue;
             if (t == '+' || t == '-' || t == '*' || t == '/') {
                 numA = text.substring(0, i);
                 numB = text.substring(i+1, text.length());
