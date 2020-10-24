@@ -1,5 +1,3 @@
-# App chuyển đổi cơ số và tính toán phục vụ cho chương 2 Kiến trúc máy tính
-
 ## Đôi lời của tác giả
 * Code được viết ra để phục vụ việc ôn tập + thi KTMT chương 2
 * Source code sử dụng jdk 1.8, viết bằng IntelliJ IDEA
@@ -7,6 +5,7 @@
 * Cũng vì là code của cá nhân nên có thể ko chính xác tuyệt đối, mình không khuyến khích sử dụng hoàn toàn trong lúc thi, nên tính tay và kiểm tra lại = app
 , hoặc sử dụng hoàn toàn app nếu tin tưởng :), ***nhưng nếu có vấn đề gì ảnh hưởng đến điểm số của bạn, mình xin phép không chịu trách nhiệm***
 * Trong quá trình test app, nếu các bạn phát hiện sai xót, please report it to me *https://www.facebook.com/daylawebgithe/*
+* Thoải mái share và tìm lỗi cho mình, fix hộ luôn cũng được :)
 
 ## Về cách sử dụng
 1. Để chuyển đổi cơ số, điền số vào đúng vị trí mà nó nên ở rồi ấn Enter, kết quả chuyển đổi sẽ xuất hiện
