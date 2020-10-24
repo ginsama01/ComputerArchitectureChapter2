@@ -327,6 +327,7 @@ public class DoubleType {
     }
 
     public static String bitdauToTen(String bitdau, String bitNguyen, String bitThuc) {
+        bitdau = FormatDouble.formatONho(bitdau);
         for (int i = 0; i < bitdau.length(); ++i) {
             if (bitdau.charAt(i) == '.') {
                 bitdau = bitdau.substring(0, i) + bitdau.substring(i+1, bitdau.length());
