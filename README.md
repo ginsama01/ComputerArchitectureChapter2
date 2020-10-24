@@ -1,6 +1,7 @@
 # Update 17h 24/10/2020
 * Số thực dấu phẩy tĩnh không dấu nay tính chính xác đến 16 chữ số thập phân
 * Chuẩn bit dấu, bù 1, bù 2 nay có thể biểu diễn trong ô nhớ 32 bit, 64 bit
+* Dấu phẩy tính có dấu nay có thể viết dưới dạng 0010 1010 0010 0110 hoặc 0010101000100100 hoặc 00101010.00100110
 
 # Update 10h15 24/10/2020
 * Fix lỗi cộng trừ số thực dấu phẩy động kết quả sai
