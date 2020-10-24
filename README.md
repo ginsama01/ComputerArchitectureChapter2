@@ -1,3 +1,7 @@
+# Update 17h 24/10/2020
+* Số thực dấu phẩy tĩnh không dấu nay tính chính xác đến 16 chữ số thập phân
+* Chuẩn bit dấu, bù 1, bù 2 nay có thể biểu diễn trong ô nhớ 32 bit, 64 bit
+
 # Update 10h15 24/10/2020
 * Fix lỗi cộng trừ số thực dấu phẩy động kết quả sai
 * Fix lỗi ko viết được số âm khi điền biểu thức trong exp
