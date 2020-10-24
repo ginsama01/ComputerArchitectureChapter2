@@ -1,3 +1,6 @@
+# Update nhỏ 22h 24/10/2020
+* Fix bug chạy lỗi khi phần fraction = 00000...0000 trong bd dấu phẩy động độ cxac đơn và kép
+
 # Update 17h 24/10/2020
 * Số thực dấu phẩy tĩnh không dấu nay tính chính xác đến 16 chữ số thập phân
 * Chuẩn bit dấu, bù 1, bù 2 nay có thể biểu diễn trong ô nhớ 32 bit, 64 bit (Bug: bị tràn số trong một số trường hợp nhưng đề kiểm tra có lẽ cũng ko có đến 32 bit, 64 bit nên mình ko fix nữa :(
