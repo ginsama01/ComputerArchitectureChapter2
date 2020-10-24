@@ -206,7 +206,7 @@ public class DoubleType {
         single = FormatDouble.formatONho(single);
         String ex = single.substring(1, 9);
         String fraction = single.substring(9, 32);
-        while (fraction.charAt(fraction.length() - 1) == '0') {
+        while (!fraction.isEmpty() && fraction.charAt(fraction.length() - 1) == '0') {
             fraction = fraction.substring(0, fraction.length() - 1);
         }
         if (!fraction.isEmpty()) {
@@ -269,7 +269,7 @@ public class DoubleType {
         single = FormatDouble.formatONho(single);
         String ex = single.substring(1, 12);
         String fraction = single.substring(12, 64);
-        while (fraction.charAt(fraction.length() - 1) == '0') {
+        while (!fraction.isEmpty() && fraction.charAt(fraction.length() - 1) == '0') {
             fraction = fraction.substring(0, fraction.length() - 1);
         }
         if (!fraction.isEmpty()) {

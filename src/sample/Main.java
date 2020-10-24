@@ -24,5 +24,6 @@ public class Main extends Application {
         launch(args);
         String s = BinaryExpression.add("1.110 x 2^(-2)", "-1.000x2^(-1)");
         System.out.println(s);
+        System.out.println((1 << 31) - 1);
     }
 }
