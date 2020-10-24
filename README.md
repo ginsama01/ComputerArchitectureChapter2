@@ -1,3 +1,7 @@
+# Update 10h15 24/10/2020
+* Fix lỗi cộng trừ số thực dấu phẩy động kết quả sai
+* Fix lỗi ko viết được số âm khi điền biểu thức trong exp
+
 ## Đôi lời của tác giả
 * Code được viết ra để phục vụ việc ôn tập + thi KTMT chương 2
 * Source code sử dụng jdk 1.8, viết bằng IntelliJ IDEA
