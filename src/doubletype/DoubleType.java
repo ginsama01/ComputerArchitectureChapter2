@@ -29,7 +29,7 @@ public class DoubleType {
         }
         result += ".";
         int dem = 0;
-        while (phanThuc != 0 && dem < 8) {
+        while (phanThuc != 0 && dem < 16) {
             phanThuc *= 2;
             if (phanThuc >= 1) {
                 result += "1";

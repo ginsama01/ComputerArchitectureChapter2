@@ -222,7 +222,7 @@ public class IntegerType {
 
     public static String twoToThapLucPhan(String two) {
         two = FormatDouble.formatONho(two);
-        if (two.isEmpty()) {
+        if (two.isEmpty() || two.equals("Trànsố")) {
             return "";
         }
         if (two.equals("None")) {
@@ -254,7 +254,7 @@ public class IntegerType {
 
     public static String twoToBatPhan(String two) {
         two = FormatDouble.formatONho(two);
-        if (two.isEmpty()) {
+        if (two.isEmpty() || two.equals("Trànsố")) {
             return "";
         }
         if (two.equals("None")) {

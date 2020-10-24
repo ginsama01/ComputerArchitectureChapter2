@@ -19,7 +19,7 @@ public class Controller1 {
     private ChoiceBox choice1, choice2, choice3, choice4;
 
     @FXML
-    ObservableList<String> list = FXCollections.observableArrayList("4", "8", "16");
+    ObservableList<String> list = FXCollections.observableArrayList("4", "8", "16", "32", "64");
 
     @FXML
     public void tenOnAction(ActionEvent event) {
